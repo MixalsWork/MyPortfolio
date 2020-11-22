@@ -1,0 +1,33 @@
+.container{
+    max-width: 1124px;
+    margin: auto;
+    
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main__title{
+    flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main a{
+    flex-basis: 31%;
+    margin: 1%;
+    overflow: hidden;
+    max-height: 460px;
+    border: 1px solid black;
+
+}
+.main a img{
+    max-width: 100%;
+    transition: all ease 0.2s;
+    
+}
+.main a img:hover{
+    transform: scale(1.2)
+}
