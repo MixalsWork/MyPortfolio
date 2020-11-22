@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техогляд</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light  col-12 col-xl-8 m-auto header__navbar ">
+            <a class="navbar-brand header__logo d-flex align-items-center" href="#">
+                <img src="img/new-logo.jpg" height="70px" width="70px"  class="d-inline-block align-top header__logo-img" alt="" loading="lazy">
+                <div class="header__logo-text">
+                        <span class=" header__logo-text-important">ТЕХ</span>ОГЛЯД 
+                </div>
+            </a>
+            <div class="header__toggler-box">
+              <button class="header__call navbar-toggler"><a href="tel:+380980982358"><img src="img/phone.svg" alt="phone"></a></button>
+              <button class="navbar-toggler header__nav-bar-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto header__nav d-flex align-items-center ">
+                <li class="nav-item d-flex align-items-center">
+                  
+                  <a class="nav-link header__nav-link" href="tel:+380980982358">Зателефонувати нам  <img src="img/phone.svg" alt="logo" width="30px" height="30px">  </a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link header__nav-link dropdown-toggle header__dropdown-important text-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                    Потрібно знати
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item scroll-to" href="#category">Категорії автомобілів</a>
+                    <a class="dropdown-item scroll-to" href="#catgory-descr">Опис категорій</a>
+                    <a class="dropdown-item scroll-to" href="#need">Що потрібно для ТО</a>
+                    <a class="dropdown-item scroll-to" href="#demands">Вимоги до авто для ТО</a>
+                    <a class="dropdown-item scroll-to" href="#price">Наші ціни</a>
+                    <a class="dropdown-item scroll-to text-wrap" href="#faq">Що передбачає обов’язковий технічний контроль?</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll-to" href="#contacts">Наші контакти</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="header__icon-box">
+                      <div class="header__icon">
+                        <a href="https://www.facebook.com/profile.php?id=100055741087555">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="header__facebook" width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                        </a>
+                      </div>
+                      <div class="header__icon">
+                        <a href="https://www.instagram.com/tekhogliadrivne/">
+                          <svg xmlns="http://www.w3.org/2000/svg" class='header__instagram' width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <div class="main" id="main">
+      <div class="container">
+          <div class="row d-flex align-items-center">
+          <div class="main__text col-12 col-xl-6">
+            <div class="main__title col-12">
+              Техогляд у Рівному
+            </div>
+            <div class="main__subtitle col-12">
+              - швидко та якісно!
+            </div>
+            <div class="main__descr col-12">
+              Компанія Rianna допоможе Вам швидко, якісно та вигідно пройти ОТК для всіх видів ТЗ
+            </div>
+            <div class="main__button col-12">
+              <a href="tel:+380980982358" class="btn  btn-lg btn-block main__button-a" role="button" aria-pressed="true">Записатися на ТО</a>
+            </div>
+          </div>
+          <div class="main__img col-12 col-xl-6">
+            <img src="img/cartoon-car-repair-new.jpg" alt="" class="col-12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category " id='category'>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 category__title">
+            Категорії транспортних засобів, які ми обслуговуємо
+          </div>
+        </div>
+        <div class="row category__box">
+          
+          <div class="category__item-box col-12 col-lg-7 ml-auto">
+            <div class="row category__item-box-row">
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr'>
+                <div class="category__item-img">
+                  <img src="img/car.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    М1
+                  </div>
+                  <div class="category__item-subtitle">
+                    Легкові автомобілі 
+                  </div>
+                  <div class="category__item-action">
+                    Детальніше
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr'>
+                <div class="category__item-img">
+                  <img src="img/bus.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    M2, M3
+                  </div>
+                  <div class="category__item-subtitle">
+                    Автобуси та маршрутні таксі 
+                  </div>
+                  <div class="category__item-action">
+                    Детальніше
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row category__item-box-row">
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr-n1'>
+                <div class="category__item-img">
+                  <img src="img/track.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    N1, N2, N3
+                  </div>
+                  <div class="category__item-subtitle">
+                    Вантажні автомобілі
+                  </div>
+                  <div class="category__item-action">
+                    Детальніше
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr-o1'>
+                <div class="category__item-img">
+                  <img src="img/trailer.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    O1, О3, О4
+                  </div>
+                  <div class="category__item-subtitle">
+                    Причепи та напівпричепи 
+                  </div>
+                  <div class="category__item-action">
+                    Детальніше
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table" id="catgory-descr">
+      <div class="container table__container">
+        <div class="table__title">
+          Опис категорій
+        </div>
+        <table class="table table-striped table-dark table-bordered table-hover table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Категорія</th>
+              <th scope="col">Опис категорії</th>
+              <th scope="col">Кількість місць для сидіння</th>
+              <th scope="col">Повна маса ТЗ</th>
+              <th scope="col">Періодичність</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>М1</td>
+              <td>Транспортні засоби, що застосовуються для перевезень пасажирів, та які мають не більше восьми сидінь окрім сидіння для водія</td>
+              <td>не більше 8 без водія</td>
+              <td></td>
+              <td>кожні два роки (таксі - 1 раз на рік)</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>М2</td>
+              <td>Транспортні засоби, що застосовуються для перевезень пасажирів, та які мають більше восьми сидінь окрім сидіння для водія, та максимальна маса яких не перевершує 5 тонн</td>
+              <td>більше 8 без водія</td>
+              <td>до 5 тонн</td>
+              <td>двічі на рік</td>
+            </tr>
+            <tr>
+              <th scope="row" id="catgory-descr-n1">3</th>
+              <td>M3</td>
+              <td>Транспортні засоби, що застосовуються для перевезень пасажирів, та які мають більше восьми сидінь окрім сидіння для водія, та максимальна маса яких перевершує 5 тонн, транспортні засоби не мають майданчика для розташування пасажирів, які стоять</td>
+              <td>більше 8 без водія</td>
+              <td>більше 5 тонн</td>
+              <td>двічі на рік</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>N1</td>
+              <td>Транспортні засоби, що застосовуються для перевезень вантажів, та максимальна маса яких не перевершує 3,5 тонни</td>
+              <td></td>
+              <td>до 3,5 тонн</td>
+              <td>кожні два роки</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>N2</td>
+              <td>Транспортні засоби, що застосовуються для перевезень вантажів, та максимальна маса яких більше, ніж 3,5 тонни, але не перевершує 12 тонн</td>
+              <td></td>
+              <td>від 3,5 до 12 тонн</td>
+              <td>для вантажних автомобілів вантажопідйомністю до 3,5 тонни, строком експлуатації більше двох років - кожні 2 роки. Для вантажних автомобілів та таксі вантажопідйомністю більше 3,5 тонни, незалежно від строку експлуатації - щороку</td>
+            </tr>
+            <tr>
+              <th scope="row" id="catgory-descr-o1">6</th>
+              <td>N3</td>
+              <td>Транспортні засоби, що застосовуються для перевезень вантажів, та максимальна маса яких більше, ніж 12 тонн</td>
+              <td></td>
+              <td>від 12 тонн</td>
+              <td>для вантажних автомобілів вантажопідйомністю до 3,5 тонни, строком експлуатації більше двох років - кожні 2 роки. Для вантажних автомобілів вантажопідйомністю більше 3,5 тонни, незалежно від строку експлуатації - щороку</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>O1</td>
+              <td>Причепи, максимальна маса яких не перевершує 0,75 тонни</td>
+              <td></td>
+              <td>до 0,75 тонн</td>
+              <td>кожні два роки</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>O3</td>
+              <td>Причепи, максимальна маса яких більше, ніж 3,5 тонни, але не перевершує 10 тонн</td>
+              <td></td>
+              <td>від 3,5 до 10 тонн</td>
+              <td>причепи вантажопідйомністю до 3,5 тонни, строком експлуатації більше двох років - кожні 2 роки. Для причепів вантажопідйомністю більше 3,5 тонни, незалежно від строку експлуатації - щороку</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>O4</td>
+              <td>Причепи, максимальна маса яких більше, ніж 10 тонн</td>
+              <td></td>
+              <td>від 10 тонн</td>
+              <td>причепи вантажопідйомністю до 3,5 тонни, строком експлуатації більше двох років - кожні 2 роки. Для причепів вантажопідйомністю більше 3,5 тонни, незалежно від строку експлуатації - щороку</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>ВСІ</td>
+              <td>Перевезення небезпечних вантажів для всіх категорій</td>
+              <td></td>
+              <td></td>
+              <td>двічі на рік</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="need" id="need">
+      <div class="container">
+        <div class="need__top-title">
+          Що потрібно для ТО
+        </div>
+        <div class="row need__item-box">
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/carwash-machine.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                ЗОВНІШНЯ ПІДГОТОВКА
+              </div>
+              <div class="need__descr">
+                <p>
+                  КТЗ повинен відповідати всім записам в реєстраційних документах на нього.
+                </p>
+                <p>
+                  Транспортний засіб повинен бути чистим, як ззовні, так і в середині.
+                </p>
+                <p>
+                  Лобове скло без тріщин.
+                </p>
+                <p>
+                  Транспортний засіб повинен бути заправлений всіма необхідними експлуатаційними рідинами.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/car-repair.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                ВНУТРІШНЯ ПІДГОТОВКА
+              </div>
+              <div class="need__descr">
+                <p>
+                  Гальмівна система та ручне гальмо повинні працювати без збоїв. Покришки повинні бути однакових розмірів та однакових малюнків на одній осі з відповідними протектормами. Транспортний
+                  засіб повинен відповідати інструкції з експлуатації, ДСТУ 3649, 4276, 4277, ПДР України, правилам ЄЕК ООН та ін.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/document.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                ДОКУМЕНТИ ТРАНСПОРТНОГО ЗАСОБУ
+              </div>
+              <div class="need__descr">
+                <p>
+                  Свідоцтво про державну реєстрацію транспортного засобу.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/personal-information.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                ДОКУМЕНТИ КЛІЄНТА
+              </div>
+              <div class="need__descr">
+                <p>
+                  Документ, що засвідчує особу водія.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="demands" id="demands">
+      <div class="container">
+        <div class="demands__title">
+          Вимоги до авто для проходження техогляду
+        </div>
+        <div class="col-12 col-lg-8 demands__subtitle">
+          Перед приїздом до випробувальної лабораторії водій та/або автовласник повинен перевірити:
+        </div>
+        <ol class="demands__list">
+          <li class="demands__list-item">
+            Справність зовнішніх світлових приладів, аварійної сигналізації
+          </li>
+          <li class="demands__list-item">
+            Справність гальмівної системи
+          </li>
+          <li class="demands__list-item">
+            Стан елементів рульового управління і ходової частини
+          </li>
+          <li class="demands__list-item">
+            Рівномірність зносу покришок і залишкову висоту протектора
+          </li>
+          <li class="demands__list-item">
+            Цілісність і герметичність ємностей технічних рідин
+          </li>
+          <li class="demands__list-item">
+            Цілісність скла, відсутність на ньому додаткового покриву
+          </li>
+          <li class="demands__list-item">
+            Справність склоомивачів і склоочисників
+          </li>
+          <li class="demands__list-item">
+            Укомплектованість вогнегасником, медичною аптечкою, запасним колесом та знаком аварійної зупинки
+          </li>
+          <li class="demands__list-item">
+            Також нагадуємо, що автомобіль повинен бути без нашарувань бруду, слідів корозії та заправлений всіма експлуатаційними рідинами згідно з настанови щодо експлуатації
+          </li>
+          <li class="demands__list-item">
+            Ознайомитись з ВИМОГАМИ
+            до перевірки конструкції та технічного стану колісного транспортного засобу, а також з методами контролювання:
+            <ol class="demands__list-in-list">
+              <li class="demands__list-in-list-item"><a href="https://patrul.in.ua/pdf/dstu-3649.pdf ">Вимоги щодо безпечності технічного cтану
+                та методи контролювання</a></li>
+              <li class="demands__list-in-list-item"><a href="https://zakon.rada.gov.ua/laws/show/z2169-12">Про затвердження Вимог до перевірки конструкції та технічного стану колісного транспортного засобу, методів такої перевірки</a></li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="price" id="price">
+      <div class="container price__container">
+        <div class="price__title">
+          Наші ціни
+        </div>
+        <table class="table table-striped table-dark table-bordered table-hover table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">Категорія</th>
+              <th scope="col">Опис</th>
+              <th scope="col">Ціна</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">М1</th>
+              <td>легкові автомобілі до 8 місць для сидіння (крім місця водія)</td>
+              <td>1000грн</td>
+            </tr>
+            <tr>
+              <th scope="row">М2</th>
+              <td>автобуси більше 8 місць для сидіння (крім місця водія) з повною масою до 5 т</td>
+              <td>1100грн</td>
+            </tr>
+            <tr>
+              <th scope="row">М3</th>
+              <td>автобуси більше 8 місць для сидіння (крім місця водія) повною масою більше 5 т</td>
+              <td>1100грн</td>
+            </tr>
+            <tr>
+              <th scope="row">N1</th>
+              <td>вантажні автомобілі з повною масою до 3,5 т</td>
+              <td>1100грн</td>
+            </tr>
+            <tr>
+              <th scope="row">N2</th>
+              <td>вантажні автомобілі та автомобілі-тягачі з повною масою від 3,5т до 12 т</td>
+              <td>1100грн</td>
+            </tr>
+            <tr>
+              <th scope="row">N3</th>
+              <td>вантажні автомобілі та автомобілі-тягачі з повною масою більше 12 т</td>
+              <td>1200грн</td>
+            </tr>
+            <tr>
+              <th scope="row">О2</th>
+              <td>причепи та напівпричепи з повною масою до 3,5 т</td>
+              <td>1100грн</td>
+            </tr>
+            <tr>
+              <th scope="row">О3</th>
+              <td>причепи та напівпричепи з повною масою від 3,5 т до 10 т</td>
+              <td>1200грн</td>
+            </tr>
+            <tr>
+              <th scope="row">О4</th>
+              <td>причепи та напівпричепи з повною масою понад 10 т</td>
+              <td>1200грн</td>
+            </tr>
+            <tr>
+              <th scope="row">N1</th>
+              <td>вантажні автомобілі з повною масою до 3,5 т, що перевозять небезпечні вантажі</td>
+              <td>1200грн</td>
+            </tr>
+            <tr>
+              <th scope="row">N2</th>
+              <td>вантажні автомобілі та автомобілі-тягачі з повною масою від 3,5т до 12 т, що перевозять небезпечні вантажі - 1400грн</td>
+              <td>1400грн</td>
+            </tr>
+            <tr>
+              <th scope="row">N3</th>
+              <td>вантажні автомобілі та автомобілі-тягачі з повною масою більше 12 т, що перевозять небезпечні вантажі</td>
+              <td>1500грн</td>
+            </tr>
+            <tr>
+              <th scope="row">О4</th>
+              <td>причепи та напівпричепи з повною масою понад 10 т, що перевозять небезпечні вантажі</td>
+              <td>1400грн</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="faq" id="faq">
+      <div class="container">
+        <div class="faq__title">
+          Що передбачає обов’язковий технічний контроль?
+        </div>
+        <div class="faq__subtitle col-12 col-lg-8">
+          ОТК транспортного засобу передбачає перевірку технічного стану транспортного засобу, а саме:
+        </div>
+        <ol class="faq__list">
+          <li class="faq__list-item">- системи гальмового і рульового керування;
+          </li>
+          <li class="faq__list-item">- зовнішніх світлових приладів;
+          </li>
+          <li class="faq__list-item">- пневматичних шин та коліс;
+          </li>
+          <li class="faq__list-item">- світлопропускання скла;
+          </li>
+          <li class="faq__list-item">- газобалонного обладнання (за наявності);
+          </li>
+          <li class="faq__list-item">- інших елементів у частині, що безпосередньо стосується безпеки дорожнього руху та охорони навколишнього природного середовища;
+          </li>
+          <li class="faq__list-item">- фотофіксація процесу проведення ТО.
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__title">
+          Наші контакти
+        </div>
+        <div class="contacts__subtitle">
+            <ol class="contacts__list">
+              <li class="contacts__list-item">Години роботи: </li>
+              <li class="contacts__list-item">ПН-ПТ: З 09:00 до 18:00 (без перерв)</li>
+              <li class="contacts__list-item">СБ: За попереднім записом</li>
+              <li class="contacts__list-item">НД: <span class="contacts__list-item--important">Вихідний</span></li>
+            </ol>
+        </div>
+        <div class="contacts__phone">
+          <a href="tel:+380980982358">+38 098 098 23 58</a>
+          <a href="tel:+380661788486">+38 066 178 84 86</a>
+        </div>
+        <div class="row contacts__box">
+          <div class="contacts__adress col-12 col-lg-3">
+            <div class="contacts__city">
+              Рівне
+            </div>
+            <div class="contacts__street">
+              Робітничий провулок
+            </div>
+            <div class="contacts__home">
+              5A
+            </div>
+            <button class="contacts__button">
+              <a target="_blank" jstcache="52" href="https://maps.google.com/maps?ll=50.646456,26.227755&amp;z=16&amp;t=m&amp;hl=ru&amp;gl=UA&amp;mapclient=embed&amp;daddr=%D0%A2%D0%B5%D1%85%D0%BE%D0%B3%D0%BB%D1%8F%D0%B4%20%D0%9E%D0%A2%D0%9A%20%D0%A0%D1%96%D0%B0%D0%BD%D0%BD%D0%B0%20%D0%A0%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D1%87%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%2C%205%D0%90%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2033009@50.6464564,26.2277546" class="navigate-link"> <div class="icon navigate-icon"></div> <div jstcache="53" class="navigate-text"> Прокласти маршрут </div> </a>
+            </button>
+          </div>
+          <div class="contacts__map col-12 col-lg-9">
+            <iframe class="contacts__google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.9824289808803!2d26.226917802771663!3d50.64601747015647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6dc3e7f438fc099!2z0KLQtdGF0L7Qs9C70Y_QtCDQntCi0Jog0KDRltCw0L3QvdCw!5e0!3m2!1sru!2sua!4v1599155333318!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row align-items-center justify-content-center ">
+          <a class="navbar-brand footer__logo d-flex align-items-center justify-content-center col-6 col-md-2" href="#">
+            <img src="img/new-logo.jpg" height="70px" width="70px"  class="d-inline-block align-top footer__logo-img" alt="logo" loading="lazy">
+        </a>
+        <div class="footer__logo-text col-10 col-md-3">
+          <span class=" footer__logo-text-important">ТЕХ</span>ОГЛЯД 
+        </div>
+        <div class="footer__icon-box col-12 col-md-2">
+          <div class="footer__icon">
+            <a href="https://www.facebook.com/profile.php?id=100055741087555">
+              <svg xmlns="http://www.w3.org/2000/svg" class="footer__facebook" width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+            </a>
+          </div>
+          <div class="footer__icon">
+            <a href="https://www.instagram.com/tekhogliadrivne/">
+              <svg xmlns="http://www.w3.org/2000/svg" class='footer__instagram' width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
+            </a>
+          </div>
+        </div>
+        <a class="nav-link footer__nav-link col-10 col-md-4" href="tel:+380980982358">Зателефонувати нам  <img src="img/phone.svg" alt="" width="30px" height="30px">  </a>
+        </div>
+      </div>
+    </div>
+    <div class="action">
+      <button class="action__button d-none"><a href="#main" class="scroll-to">Вгору</a></button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
